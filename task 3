@@ -1,0 +1,19 @@
+def pr():
+
+    sp1 = input("Введите 1 список: ").split()
+    sp2 = input("Введите 2 список: ").split()
+
+    for i in sp1:
+        sp1.remove(i)
+
+    for i in sp2:
+        sp2.remove(i)
+    
+    if len(sp1)>len(sp2):
+        print("Кол-во уникальных символов в 1 списке больше!")
+    elif len(sp2)>len(sp1):
+        print("Кол-во уникальных символов в 2 списке больше!")
+    else:
+        print("Кол-во уникальных символов одинаково!")
+
+pr()
