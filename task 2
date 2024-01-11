@@ -1,0 +1,12 @@
+def sr(a,b):
+    if a == b:
+        print("Числа нельзя сравнивать!")
+        return
+    if a > b:
+        c = a-b
+    else:
+        c = b-a
+
+    print(c)
+
+sr(4,2)
