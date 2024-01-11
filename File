@@ -1,0 +1,5 @@
+def mn(a,b):
+    c = a*b
+    print(c)
+
+mn(4,2)
