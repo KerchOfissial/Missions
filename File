@@ -1,5 +1,21 @@
-def mn(a,b):
-    c = a*b
-    print(c)
+def switch_color(button,color):
+    button.config(bg=color)
 
-mn(4,2)
+frame1 = Frame()
+frame1.pack(expand=YES,fill=BOTH)
+
+button1 = Button(frame1)
+button1.pack(expand=YES,fill=BOTH,side = LEFT)
+button1.config(text= "Button1",width=12,height=8)
+button1.config(bg='gray',activebackground='white')
+button1.config(command = lambda button = button1,color = 'blue': switch_color(button,color))
+button1.bind('<Button-3>', lambda event,button = button1,color = 'purple': switch_color(button,color))
+
+button2 = Button(frame1)
+button2.pack(expand=YES,fill=BOTH,side = LEFT)
+button2.config(text= "Button2",width=12,height=8)
+button2.config(bg='gray',activebackground='white')
+button2.config(command = lambda button = button1,color = 'blue': switch_color(button,color))
+button2.bind('<Button-3>', lambda event,button = button1,color = 'orange': switch_color(button,color))
+
+mainloop()
