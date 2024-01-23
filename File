@@ -1,9 +1,12 @@
-from tkinter import *
+from random import shuffle
+sp = ["Привет","Игорь","Слово","Колено"]
 
-root = Tk()
-hgt = 10
-wdth = 10
-btn["text"] = f'height - {height},width - {width}'
-btn = Button(height=hgt,width=wdth).pack()
+def programm(spisok):
+    for i, tmp in enumerate(spisok):
+        new_word = list[tmp]
+        shuffle(new_word)
+        spisok[i] = ''.join(new_word)
 
-root.mainloop()
+print(sp)
+programm(sp)
+print(sp)
