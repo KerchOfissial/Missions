@@ -2,14 +2,20 @@ dict = {"Ловкость":0,"Сила":0,"Скорость":0,"Интелект
 
 print(dict)
 
-ochk = 5
+ochk = 10
 
 while ochk != 0:
-    inp = input("Введите характеристику(Ловкость,Сила,Скорость,Интелект,Скалолазание: ")
-    if inp not in dict.keys():
+    inp_har = input("Введите характеристику(Ловкость,Сила,Скорость,Интелект,Скалолазание: ")
+    if inp_har not in dict.keys():
         print("Такого значения нет. Попробуйте ещё раз")
-    else:
-        ochk -= 1
-        dict[inp] += 1
+        continue
 
+    inp_kolvo = int(input(f"Введите кол-во очков, на которые вы хотите увеличить значение {inp_har}: "))
+    if inp_kolvo > ochk:
+        print("Слишком сильная прокачка, попробуйте сделать слабее")
+        continue
+    ochk -= inp_kolvo
+    dict[inp_har] += inp_kolvo
+    print(f'К характеристике {inp_har} было добавлено {inp_kolvo} очков')
     print(dict)
+    continue
