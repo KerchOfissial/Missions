@@ -11,7 +11,7 @@ while ochk != 0:
         continue
 
     inp_kolvo = int(input(f"Введите кол-во очков, на которые вы хотите увеличить значение {inp_har}: "))
-    if inp_kolvo > ochk or inp_kolvo = 0:
+    if inp_kolvo > ochk or inp_kolvo == 0:
         print("Слишком сильная прокачка, попробуйте сделать её слабее")
         continue
     ochk -= inp_kolvo
