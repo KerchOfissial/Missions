@@ -17,5 +17,6 @@ while ochk != 0:
     ochk -= inp_kolvo
     dict[inp_har] += inp_kolvo
     print(f'К характеристике {inp_har} было добавлено {inp_kolvo} очков')
+    print(f"Оставшиеся очки: {ochk}")
     print(dict)
     continue
