@@ -1,65 +1,10 @@
-import random
-
-shool_journ = {
-"Петров Иван":{"Русский язык": [],"Математика": [],"Английский язык": [],"Французский язык": []},
-"Иванов Кирилл":{"Русский язык": [],"Математика": [],"Английский язык": [],"Французский язык": []},
-"Стряпко Игорь":{"Русский язык": [],"Математика": [],"Английский язык": [],"Французский язык": []},
-"Долженко Саша":{"Русский язык": [],"Математика": [],"Английский язык": [],"Французский язык": []}
-}
-sp = []
-sr_balls_all_in_all = []
-
-def zapoln(student):
-    for marks in shool_journ[student].values():
-        amount = random.randint(5,10)
-        for _ in range(amount):
-            marks.append(random.randint(2,5))
-
-for student in shool_journ.keys():
-    zapoln(student)
-
-print(shool_journ)
-
-def sr_ball(student):
-    global sp
-    for keys,marks in shool_journ[student].items():
-        sp = shool_journ[student].items()
-    for pr,ab in sp:
-        sr_balls = sum(ab)/ len(ab)
-        sr_balls_all_in_all.append((sr_balls))
-        print(f"Средний балл {student} по {pr}: {round(sr_balls,2)}")
-
-for student in shool_journ.keys():
-    sr_ball(student)
-
-sr_balls1 = []
-sr_balls2 = []
-sr_balls3 = []
-sr_balls4 = []
-
-sr_balls1.append(sr_balls_all_in_all[0])
-sr_balls1.append(sr_balls_all_in_all[1])
-sr_balls1.append(sr_balls_all_in_all[2])
-sr_balls1.append(sr_balls_all_in_all[3])
-
-sr_balls2.append(sr_balls_all_in_all[4])
-sr_balls2.append(sr_balls_all_in_all[5])
-sr_balls2.append(sr_balls_all_in_all[6])
-sr_balls2.append(sr_balls_all_in_all[7])
-
-sr_balls3.append(sr_balls_all_in_all[8])
-sr_balls3.append(sr_balls_all_in_all[9])
-sr_balls3.append(sr_balls_all_in_all[10])
-sr_balls3.append(sr_balls_all_in_all[11])
-
-sr_balls4.append(sr_balls_all_in_all[12])
-sr_balls4.append(sr_balls_all_in_all[13])
-sr_balls4.append(sr_balls_all_in_all[14])
-sr_balls4.append(sr_balls_all_in_all[15])
-
-sball_1 = sum(sr_balls1)/len(sr_balls1)
-sball_2 = sum(sr_balls2)/len(sr_balls2)
-sball_3 = sum(sr_balls3)/len(sr_balls3)
-sball_4 = sum(sr_balls4)/len(sr_balls4)
-
-print(f"Средний балл по всем предметам у:\nПетрова Ивана: {round(sball_1,2)}\nИванов Кирилла: {round(sball_2,2)}\nСтряпко Игоря: {round(sball_3,2)}\nДолженко Саши: {round(sball_4,2)}")
+p = [["_","_","_","_","_","_","_","_","_","_"],"\n",
+      ["_","_","_","_","_","_","_","_","_","_"],'\n',
+      ["_","_","_","_","_","_","_","_","_","_"],'\n',
+      ["_","_","_","_","_","_","_","_","_","_"],'\n',
+      ["_","_","_","_","_","_","_","_","_","_"],'\n',
+      ["_","_","_","_","_","_","_","_","_","_"],'\n',
+      ["_","_","_","_","_","_","_","_","_","_"],'\n',
+      ["_","_","_","_","_","_","_","_","_","_"],'\n',
+      ["_","_","_","_","_","_","_","_","_","_"],'\n',
+      ["_","_","_","_","_","_","_","_","_","_"],'\n']
