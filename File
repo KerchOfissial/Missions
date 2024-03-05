@@ -1,16 +1,11 @@
-import  random
+import random
 
-dict = {'Привет':["Привет","Ку","Дароу","Приветствую","Честь имею"],"Как дела":["Норм","Каеф","Жить можно","Не всё так плохо"], "Ты хороший":["Спасибо, ты тоже","Спасибо"]}
+sp = [[],[],[]]
 
-while True:
-    inp = input("Введите сообщение: ")
+for i in sp:
+    while sum(i) <100:
+        i.append(random.randint(1,20))
 
-    if inp in dict:
-        print(random.choice(dict[inp]))
-        continue
-
-    if inp not in dict and inp != "Пока":
-        print("Бот не знает такое:(")
-        continue
-    if inp == "Пока":
-        break
+    print(i)
+    i.sort(reverse=True)
+    print(f'1-ое место в строке: {i[0]}. 2-е место: {i[1]}. 3-е место: {i[2]}')
