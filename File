@@ -1,22 +1,19 @@
-inp = input("Введите имя: ")
-inp2 = int(input("Введите возраст: "))
-tmp = True
 try:
-    while tmp:
+    while True:
+        inp = input("Введите имя: ")
+        inp2 = int(input("Введите возраст: "))
+
         if len(inp) >= 10:
-            print("Найдена ошибка")
-            tmp = False
-
+            print("Слишком большая длина имени")
+            continue
         if inp.islower():
-            print("Найдена ошибка")
-            tmp = False
-
+            print("Имя не с большой буквы")
+            continue
         if inp2 <10 or inp2 >= 100:
-            print("Найдена ошибка")
-            tmp = False
-
+            print("Неправильный возраст")
+            continue
+        break
 except:
     print("Ошибка в проверке")
-
 finally:
     print("Программа закончила работу")
