@@ -1,21 +1,21 @@
-import time
+import random
+from collections import Counter
 
-int = int(input("Введите число, с которого начнётся отсчёт: "))
-def timer():
-    try:
-        global int
-        if int <= 0:
-            print("Число не должно быть равным или меньше нуля!")
-        if type(int) == float:
-            print("Число не может быть дробным")
-    except:
-        print("Неправильное число или ошибка синтаксиса!")
+str1 = "0123456789".split()
+str2 = "ABCDEFGHIJ".split()
+sp = []
+for i in str1:
+    for j in i:
+        sp.append(j)
 
-timer()
+for i in str2:
+    for j in i:
+        sp.append(j)
 
-while int != 0:
-    time.sleep(1)
-    print(int)
-    int -= 1
+print(sp)
+random.shuffle(sp)
+print(sp)
 
-print("Программа закончила работу")
+journ = Counter(sp)
+
+print(journ)
