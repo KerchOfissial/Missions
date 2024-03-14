@@ -1,12 +1,21 @@
-def sr(a,b):
-    if a == b:
-        print("Числа нельзя сравнивать!")
-        return
-    if a > b:
-        c = a-b
-    else:
-        c = b-a
+import time
 
-    print(c)
+int = int(input("Введите число, с которого начнётся отсчёт: "))
+def timer():
+    try:
+        global int
+        if int <= 0:
+            print("Число не должно быть равным или меньше нуля!")
+        if type(int) == float:
+            print("Число не может быть дробным")
+    except:
+        print("Неправильное число или ошибка синтаксиса!")
 
-sr(4,2)
+timer()
+
+while int != 0:
+    time.sleep(1)
+    print(int)
+    int -= 1
+
+print("Программа закончила работу")
