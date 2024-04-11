@@ -1,19 +1,14 @@
-try:
-    while True:
-        inp = input("Введите имя: ")
-        inp2 = int(input("Введите возраст: "))
+<meta charset="utf-8">
+<title>Задание №1</title>
+<html>
+<head>
 
-        if len(inp) >= 10:
-            print("Слишком большая длина имени")
-            continue
-        if inp.islower():
-            print("Имя не с большой буквы")
-            continue
-        if inp2 <10 or inp2 >= 100:
-            print("Неправильный возраст")
-            continue
-        break
-except:
-    print("Ошибка в проверке")
-finally:
-    print("Программа закончила работу")
+</head>
+
+<body>
+<h1>Алексеев Евгений Юрьевич</h1>
+<h2>24.01.2010</h2>
+<h3>Рост: 178 см</h3>
+<h3>Вес: 67 кг</h3>
+<h4>Г.о Электросталь, улица Победы 1 к. 1</h4>
+<h4>+7 925 410-75-41</h4>
