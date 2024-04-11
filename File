@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 
-<title>Задание №3</title>
+<title>Задание №4</title>
 <html>
 
 <head>
@@ -9,12 +9,29 @@
 
 <body>
 
-<p> <h1>Проверка стилей текста:</h1> </p>
-<p> <h4> <del>Этот текст зачёркнут</del> </h4> </p>
-<p> <h4> <b>Этот текст выделен жирным</b> </h4> </p>
-<p> <h4> <del>Зачеркнём не весь текст,</del> <u>часть текста подчеркнём</u> </h4> </p>
-<p> <h4> <u>Правильное подчеркнуть,</u> <del>неправильное зачеркнуть,</del> <b>важное - выделить</b> </h4> </p>
+<h1>Вход в систему</h1>
 
-<p> <h1>Напишем пару формул:</h1> </p>
-<p> <h4>Квадрат суммы: (A+B)<sup>2</sup> = A<sup>2</sup> + 2AB + B<sup>2</sup></h4>  </p>
-<p> <h4>Куб суммы: (A+B)<sup>3</sup> = A<sup>3</sup> + 3A<sup>2</sup>B + 3AB<sup>2</sup> + B<sup>3</sup></h4>  </p>
+<h3>Логин</h3>
+<input type="text" placeholder="Enter name" />
+
+<h3>Пароль</h3>
+<input type="password" placeholder="Enter your password" />
+
+<h3>Код</h3>
+<select>
+      <option value="Код">Enter your code</option>
+      <option value="+373">+373</option>
+      <option value="+955">+955</option>
+      <option value="+996">+996</option>
+      <option value="+7">+7</option>
+</select>
+<input type="number" placeholder="XXX-XXX-XX-XX" />
+
+<h3>Почта</h3>
+<input type="email" placeholder="Enter your email" />
+<h3>Данные верны?</h3>
+<input type="button" value="Подтвердить" />
+<input type="button" value="Очистить" />
+
+</body>
+</html>
