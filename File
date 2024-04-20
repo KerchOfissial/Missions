@@ -1,37 +1,44 @@
-<meta charset="utf-8">
+.riz{
+    margin-top: 34px;
+    text-align: center;
+    color: red;
+    z-index: 3;
+    position: absolute;
+    display: flex;
+}
 
-<title>Задание №4</title>
-<html>
+.avt{
+    margin-top: 132px;
+    text-align: center;
+    color: blue;
+    z-index: 3;
+    position: absolute;
+    display: flex;
+}
 
-<head>
+.nam{
+    margin-top: 203px;
+    text-align: center;
+    color: blue;
+    z-index: 1;
+    position: absolute;
+    color: black;
+    display: flex;
+}
 
-</head>
+.pas{
+    margin-top: 245px;
+    text-align: center;
+    color: blue;
+    z-index: 1;
+    position: absolute;
+    color: black;
+    display: flex;
+}
 
-<body>
-
-<h1>Вход в систему</h1>
-
-<h3>Логин</h3>
-<input type="text" placeholder="Enter name" />
-
-<h3>Пароль</h3>
-<input type="password" placeholder="Enter your password" />
-
-<h3>Код</h3>
-<select>
-      <option value="Код">Enter your code</option>
-      <option value="+373">+373</option>
-      <option value="+955">+955</option>
-      <option value="+996">+996</option>
-      <option value="+7">+7</option>
-</select>
-<input type="number" placeholder="XXX-XXX-XX-XX" />
-
-<h3>Почта</h3>
-<input type="email" placeholder="Enter your email" />
-<h3>Данные верны?</h3>
-<input type="button" value="Подтвердить" />
-<input type="button" value="Очистить" />
-
-</body>
-</html>
+.fon1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 0;
+}
