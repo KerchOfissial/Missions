@@ -1,21 +1,20 @@
-ans = 'да'
-a = ''
+a_1 = int(input("Введите начальную точку 1 отрезка: "))
+b_1 = int(input("Введите конечную точку 1 отрезка: "))
 
-while ans != "нет":
-    inp_str = input("Введите строку: ").lower()
-    inp_str2 = input("Введите подстроку: ").lower()
-    inp_sp = inp_str.split()
-    inp_sp2 = inp_str2.split()
-    print(inp_sp)
-    print(inp_sp2)
-    for i in inp_sp:
-        for j in inp_sp2:
-            if i == j:
-                a = "Совпадение найдено"
-                print(a)
-                break
-            else:
-                continue
-    if a = '':
-        print("Совпадений нет")
-    ans = input("Хотите продолжить?").lower()
+a_2 = int(input("Введите начальную точку 2 отрезка: "))
+b_2 = int(input("Введите конечную точку 2 отрезка: "))
+if a_1 < a_2:
+    if a_2 > b_1:
+        print("Отрезки не пересекаются")
+    elif a_2 == b_1:
+        print("Отрезки имеют одну общую точку:", a_2)
+    elif a_2 < b_1:
+        print("Отрезки пересекаются на промежутке",a_2,"-",b_1)
+
+elif a_1 > a_2:
+    if a_1 > b_2:
+        print("Отрезки не пересекаются")
+    elif a_1 == b_2:
+        print("Отрезки имеют одну общую точку:", a_1)
+    elif a_1 < b_2:
+        print("Отрезки пересекаются на промежутке", a_1, "-", b_2)
