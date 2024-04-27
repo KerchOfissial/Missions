@@ -1,18 +1,13 @@
-import random
+import time
+import os
 
-a = []
-b = []
-c = []
+sp = ["\\_/", "\\_/", "\\_/"]
+sp1 = ["/", "\\_/", "\\_/","\\"]
 
-for i in range(10):
-    a.append(random.randint(1,20))
-    b.append(random.randint(1, 20))
-
-for i in a:
-    for j in b:
-        if i == j:
-            c.append(i)
-
-print(a)
-print(b)
-print(c)
+while True:
+    print(' '.join(map(str, sp1)))
+    print(' '.join(map(str, sp)))
+    time.sleep(1)
+    print(' '.join(map(str, sp)))
+    print(' '.join(map(str, sp1)))
+    time.sleep(1)
