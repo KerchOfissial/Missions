@@ -1,10 +1,13 @@
 import re
 
-inp = input("Введите строку с датой(-ами): ")
-
-dat = re.findall('\d{2}.\d{2}.\d{2}\s', inp)
-dat_2 = re.findall('\d{2}.\d{2}.\d{4}', inp)
-for i in dat_2:
-    dat.append(i)
-    
-print(dat)
+while True:
+    pot = input("Введите почту: ")
+    pat = re.compile(r"\w{5,}@\w*mail\.\w{2,3}")
+    r = re.findall(pat,pot)
+    print(r)
+    if r == []:
+        print("Почта введена неправильно!")
+        continue
+    if r != []:
+        print("Почта введена верно!")
+        break
