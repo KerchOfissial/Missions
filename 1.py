@@ -1,7 +1,7 @@
 import re
 
-inp = input("Введите строку: ")
+inp = input("Введите строку с датой(-ами): ")
 
-r = re.split('\s+', inp)
+dat = re.split('\d\d.\d\d.\d\d\s', inp)
 
-print(r[0],r[-1])
+print(dat)
