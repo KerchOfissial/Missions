@@ -22,3 +22,4 @@ while True:
                     continue
                 else:
                     print("Пароль сохранён")
+                    break
