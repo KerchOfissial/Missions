@@ -16,7 +16,7 @@ while True:
                 print(f'{inp} - ненадёжный пароль!')
                 continue
             else:
-                r = re.search('[-_/?!@<>]', inp)
+                r = re.search('[-_/?!@<>=+*]', inp)
                 if r == None:
                     print(f'{inp} - ненадёжный пароль!')
                     continue
